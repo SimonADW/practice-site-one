@@ -1,0 +1,156 @@
+
+
+@font-face {
+    font-family: acmeFont;
+    src: url(/fonts/Acme/Acme-Regular.ttf); 
+}
+
+@font-face {
+    font-family: ABeeZee;
+    src: url(/fonts/ABeeZee/ABeeZee-Regular.ttf);
+}
+
+/* Coolor palette */
+:root {
+--theme-color-main: #FFECD1 ;
+--theme-color-sec: #15616D ; 
+--theme-color-third: #FF7D00 ;
+--theme-color-fourth: #001524 ; 
+--theme-color-fifth: #78290F ;
+}
+
+
+
+
+* {
+    font-family: ABeeZee;
+    list-style: none;
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: var(--theme-color-main);
+}
+
+.nav {    
+    display: flex;    
+
+    gap: 20px;
+}
+
+li {    
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-weight: 900;        
+    
+}
+
+a {
+    color: var(--theme-color-main);    
+}
+
+a:hover {
+    color: var(--theme-color-third);
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    width: 7rem;
+    background: var(--theme-color-fourth);
+    color: var(--theme-color-main);
+    font-family: acmeFont;
+
+    
+}
+
+.nav li:nth-of-type(4) {
+    margin-left: auto;
+}
+
+.nav li:nth-of-type(5) {
+    margin-right: 40px;
+}
+main {
+    background: transparent;
+    display: flex;
+    flex: 1 0 85vh;   
+    flex-direction: column; 
+    margin: 0 10rem; 
+
+}
+
+header {
+    background-color: var(--theme-color-sec);
+    height: fit-content;
+    
+}
+footer {
+    background-color: var(--theme-color-sec);
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    color: var(--theme-color-main);
+}
+
+.contact li {
+    font-size: 0.7rem;
+}
+
+article {
+    display: flex;    
+    column-gap: 40px;
+    margin-bottom: 100px;
+}
+
+section {
+    flex: 1;
+    padding: 40px;
+    border: 4px solid var(--theme-color-fifth);
+    border-radius: 4px;
+    /* background-image: url(/pics/surface-of-water.jpeg); */
+}
+
+/* Image cabin */
+
+.image-container {
+    height: 350px;
+    border: 1px solid black;
+    margin-bottom: auto;
+    background-image: url(/pics/lake-cropped.png);
+
+}
+
+
+    
+
+
+/* Style headings */
+h1 {
+    font-size: 3rem;
+    font-family: acmeFont;    
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: ABeeZee;  
+ 
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
