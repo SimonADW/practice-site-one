@@ -111,6 +111,8 @@ footer {
     font-size: 0.7rem;
 }
 
+/* Upper three sections */
+
 article {
     display: flex;    
     column-gap: 40px;
@@ -123,7 +125,6 @@ section {
     padding-top: 0;
     border: 4px solid var(--theme-color-fifth);
     border-radius: 4px;
-    /* background-image: url(/pics/surface-of-water.jpeg); */
 }
 
 /* Image cabin */
@@ -142,6 +143,8 @@ section {
     font-size: 2.5rem;
     font-family: acmeFont;
 }
+
+/* Lower sections */
 
 .lower-sec-left {
     display: flex;
@@ -163,9 +166,32 @@ section {
     overflow: auto;
     height: 20rem;
     flex: 2;
+    background-color:var(--theme-color-sec);
+    color: var(--theme-color-main);
 }
-    
 
+/* Video section */
+    
+.tur {
+    display: flex; 
+    flex-direction: column;
+    border: none;  
+}
+
+.tur div {
+    margin: 0 auto 2rem auto;
+    width: 50%;
+}
+
+/* Iframe positioning */
+.tur :nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.tur h2, .tur h3 {
+    text-align: center;
+}
 
 /* Style headings */
 h1 {
@@ -178,6 +204,10 @@ h2 {
     font-size: 1.5rem;
     font-family: ABeeZee;  
  
+}
+
+h3 {
+    font-size: 28px;
 }
 
 p {
