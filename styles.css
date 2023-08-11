@@ -25,13 +25,10 @@
 * {
     font-family: ABeeZee;
     list-style: none;
-    font-size: 25px;
+    font-size: 30px;
     text-decoration: none;
     
 }
-
-
-
 
 body {
     display: flex;
@@ -39,9 +36,10 @@ body {
     background: var(--theme-color-main);
 }
 
+/*  Header, nav and footer  */
+
 .nav {    
     display: flex;    
-
     gap: 20px;
 }
 
@@ -80,15 +78,7 @@ button {
 .nav li:nth-of-type(5) {
     margin-right: 40px;
 }
-main {
-    background: transparent;
-    display: flex;
-    flex-direction: column; 
-    max-width: 80rem;
-    min-width: 50rem;
-    margin: 0 10rem; 
 
-}
 
 header {
     background-color: var(--theme-color-sec);
@@ -97,7 +87,7 @@ header {
 }
 footer {
     background-color: var(--theme-color-sec);
-
+    
 }
 
 .contact {
@@ -109,6 +99,16 @@ footer {
 
 .contact li {
     font-size: 0.7rem;
+}
+
+main {
+    background: transparent;
+    display: flex;
+    flex-direction: column; 
+    max-width: 80rem;
+    min-width: 50rem;
+    margin: 0 10rem; 
+
 }
 
 /* Upper three sections */
@@ -131,7 +131,7 @@ section {
 
 .image-container {
     display: flex;
-    height: 350px;
+    height: 11rem;
     border: 1px solid black;
     margin-bottom: 3rem;
     background-image: url(/pics/lake-cropped.png);
@@ -213,4 +213,95 @@ h3 {
 p {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+}
+
+/* Style icons  */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #15616D;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+  /* For mobile device */
+  @media screen and (max-width: 600px) {
+    
+    * {
+        font-size: 15px;
+    }
+
+    body {
+
+
+    }
+    
+    main {
+        
+        min-width: 80vw;
+        width: 100%;
+        margin: 0 0 0 15px;
+    }
+    
+    
+    header, footer {
+        height: 4.3rem;
+    }
+    
+    .nav {
+        margin: 10px 10px 0 10px;
+        gap: 0;
+        padding: 0;
+        
+    }
+
+    .nav li:nth-of-type(4){  /* position buttons */
+        margin-left: auto;
+    }
+    .nav li:nth-of-type(5) {  /* position buttons */
+        margin-right: 3px;
+    }
+    
+    button {
+        padding: 5px;
+        width: 4rem;
+        
+    } 
+
+    article {
+        flex-flow: column;
+        gap: 25px;
+        margin: 0 0;
+
+    }
+    section {
+        padding: 10px;
+    }
+
+    .image-container {
+        margin-top: 2rem;
+    }
+
+ 
+    .lower-sec-right {
+        flex: auto;
+    }
+    
+    iframe {
+        height: 13rem;
+    }
+    
+
+    
+
 }
